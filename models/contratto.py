@@ -10,4 +10,4 @@ class ContrattiContratto(models.Model):
     Con_NomeCliente = fields.Char(string='Nome')
     Con_CodFiscaleCliente = fields.Char(string='Codice Fiscale')
     Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identita'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])
-    Active = fields.Boolean(string="Active", default=True)
+    Con_Active = fields.Boolean(string="Active", default=True)
