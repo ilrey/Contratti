@@ -7,11 +7,17 @@
 		<field name="model">contratti.contratto</field>
 		<field name="arch" type="xml">
 			<form>
+				<sheet>
 				<p>Dettagli Cliente</p>
-				<field name="Con_CognomeClienteContratto"/>
-				<field name="Con_NomeCliente"/>
-				<field name="Con_CodFiscaleCliente"/>
-				<field name="Con_TipoDocumento"/>
+					<group>
+						<field name="Con_CognomeClienteContratto"/>
+						<field name="Con_NomeCliente"/>
+					</group>
+					<group>
+						<field name="Con_CodFiscaleCliente"/>
+						<field name="Con_TipoDocumento"/>
+					</group>
+				</sheet>
 			</form>
 		</field>
 	</record>
