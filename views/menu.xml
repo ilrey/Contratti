@@ -4,14 +4,14 @@
 			  name="Contratti"
 			  sequence="0"/>
 	
-	<menuitem id="menu_contratti_master"
+	<menuitem id="menu_contratto_master"
 			  name="Dettaglio Contratto"
 			  parent="menu_contratti_root"
 			  sequence="0"/>
 
-	<menuitem id="menu_contratti"
+	<menuitem id="menu_contratto"
 			  name="Contratto"
 			  ACTION="action_contratti_contratto"
-			  parent="menu_contratti_master"
+			  parent="menu_contratto_master"
 			  sequence="0"/>
 </odoo>
