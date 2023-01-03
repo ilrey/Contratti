@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
+	<record id="view_contratti_contratto_tree" model="ir.ui.view">
+		<field name="name">contratti.contratto.tree</field>
+		<field name="model">contratti.contratto</field>
+		<field name="arch" type="xml">
+			<tree>
+				<field name="Con_CognomeClienteContratto"/>
+				<field name="Con_NomeCliente"/>
+				<field name="Con_CodFiscaleCliente"/>
+			</tree>
+		</field>
+	</record>
+
+	
+	<record id="view_contratti_contratto_search" model="ir.ui.view">
+		<field name="name">contratti.contratto.search</field>
+		<field name="model">contratti.contratto</field>
+		<field name="arch" type="xml">
+			<search>
+				<field name="Con_CognomeClienteContratto"/>
+				<field name="Con_NomeCliente"/>
+				<field name="Con_CodFiscaleCliente"/>
+			</search>
+		</field>
+	</record>
+
+	
+	<record id="view_contratti_contratto_form" model="ir.ui.view">
+		<field name="name">contratti.contratto.form</field>
+		<field name="model">contratti.contratto</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<p>
+						<b>Dati del Cliente</b>
+					</p>
+					<group>
+						<group>
+							<field name="Con_CognomeClienteContratto"/>
+							<field name="Con_NomeCliente"/>
+						</group>
+						<group>
+							<field name="Con_CodFiscaleCliente"/>
+							<field name="Con_TipoDocumento" string="Tipo Documento"/>
+						</group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+
 	<record id="action_contratti_contratto" model="ir.actions.act_window">
 		<field name="name">Contratti</field>
 		<field name="type">ir.actions.act_window</field>
