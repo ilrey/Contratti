@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record id="action_contratti_contratto" model="ir.actions.act_window">
+	<record id="action_inscont_contr" model="ir.actions.act_window">
 		<field name="name">Contratti</field>
 		<field name="type">ir.actions.act_window</field>
 		<field name="res_model">contratti.contratto</field>
@@ -9,7 +9,7 @@
 		<field name="help" type="html">
 			<p class="o_view_nocontent_smiling_face">
 				Inserisci il tuo primo contratto!
-			</p>		
+			</p>
 		</field>
 	</record>
 </odoo>

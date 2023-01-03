@@ -3,14 +3,15 @@
 	<menuitem id="menu_contratti_root"
 			  name="Contratti"
 			  sequence="0"/>
-	
+
 	<menuitem id="menu_contratti_master"
 			  name="Dettaglio Contratto"
 			  parent="menu_contratti_root"
 			  sequence="0"/>
 
 	<menuitem id="menu_contratti"
-			  name="Contratto"		  
+			  name="Contratto"
 			  parent="menu_contratti_master"
+			  action="action_inscont_contr"
 			  sequence="0"/>
 </odoo>
