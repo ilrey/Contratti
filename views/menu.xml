@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<record id="action_contratti_contratto" model="ir.actions.act_window">
-		<field name="name">Contratti</field>
-		<field name="type">ir.actions.act_window</field>
-		<field name="res_model">contratti.contratto</field>
-		<field name="view_mode">tree, form</field>
-		<field name="context">{}</field>
-		<field name="help" type="html">
-			<p class="o_view_nocontent_smiling_face">
-				Inserisci il tuo primo contratto!
-			</p>		
-		</field>
-	</record>
+	<menuitem id="menu_contratti_root"
+			  name="Contratti"
+			  sequence="0"/>
+	
+	<menuitem id="menu_contratti_master"
+			  name="Dettaglio Contratto"
+			  parent="menu_contratti_root"
+			  sequence="0"/>
+
+	<menuitem id="menu_contratti"
+			  name="Contratto"
+			  parent="menu_contratti_master"
+			  sequence="0"/>
+
 </odoo>
