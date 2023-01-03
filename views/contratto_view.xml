@@ -40,7 +40,6 @@
 						<group>
 							<field name="Con_CognomeClienteContratto"/>
 							<field name="Con_NomeCliente"/>
-							<field name="Con_PartnerId"/>
 						</group>
 						<group>
 							<field name="Con_CodFiscaleCliente"/>
