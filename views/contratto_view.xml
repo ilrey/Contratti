@@ -10,12 +10,14 @@
 				<sheet>
 				<p>Dettagli Cliente</p>
 					<group>
-						<field name="Con_CognomeClienteContratto"/>
-						<field name="Con_NomeCliente"/>
-					</group>
-					<group>
-						<field name="Con_CodFiscaleCliente"/>
-						<field name="Con_TipoDocumento"/>
+						<group>
+							<field name="Con_CognomeClienteContratto"/>
+							<field name="Con_NomeCliente"/>
+						</group>
+						<group>
+							<field name="Con_CodFiscaleCliente"/>
+							<field name="Con_TipoDocumento" string="Tipo Documento"/>
+						</group>
 					</group>
 				</sheet>
 			</form>
