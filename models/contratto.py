@@ -12,4 +12,4 @@ class ContrattiContratto(models.Model):
     Con_CodFiscaleCliente = fields.Char(string='Codice Fiscale')
     active = fields.Boolean(string="Active", default=True)
     Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identita'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])
-    Con_UserId = fields.Many2one('res.users', string="Agente")
+    #Con_UserId = fields.Many2one('res.users', string="Agente")
