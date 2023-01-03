@@ -5,6 +5,7 @@ from odoo import api, fields, models
 class ContrattiContratto(models.Model):
     _name = "contratti.contratto"
     _description = "Contratto"
+    _inherit = "res.users"
 
     Con_CognomeClienteContratto = fields.Char(string='Cognome')
     Con_NomeCliente = fields.Char(string='Nome')
