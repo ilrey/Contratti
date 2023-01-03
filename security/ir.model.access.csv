@@ -1,2 +1,2 @@
-id,name,model_id:id,perm_read,perm_write,perm_create,perm_unlink
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access.contratti.contratto,access_contratti_contratto,Contratti.model_contratti_contratto,base.group_user,1,1,1,1
