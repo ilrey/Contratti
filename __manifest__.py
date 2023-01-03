@@ -4,7 +4,7 @@
     'summary': 'Inserimenti Contratti Agenti',
     'description': 'Inserimenti Contratti Agenti',
     'category': '',
-    'author': 'IlRey',
+    'author': 'Computer repair with a smile',
     'maintainer': 'IlRey',
     'website': 'https://github.com/ilrey',
     'license': 'LGPL-3',
