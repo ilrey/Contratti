@@ -14,15 +14,15 @@
 	</record>
 
 	
-	<record id="view_contratti_contratto_tree" model="ir.ui.view">
-		<field name="name">contratti.contratto.tree</field>
+	<record id="view_contratti_contratto_search" model="ir.ui.view">
+		<field name="name">contratti.contratto.search</field>
 		<field name="model">contratti.contratto</field>
 		<field name="arch" type="xml">
-			<tree>
+			<search>
 				<field name="Con_CognomeClienteContratto"/>
 				<field name="Con_NomeCliente"/>
 				<field name="Con_CodFiscaleCliente"/>
-			</tree>
+			</search>
 		</field>
 	</record>
 
