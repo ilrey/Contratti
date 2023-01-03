@@ -12,6 +12,7 @@
 
 	<menuitem id="menu_contratti"
 			  name="Contratto"
-			  parent="menu_contratti_master"
+			  action="Contratti.action_contratti_contratto"
+			  parent="menu_contratti_master"	
 			  sequence="0"/>
 </odoo>
