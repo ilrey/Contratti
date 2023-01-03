@@ -1,0 +1,17 @@
+{
+    'name': 'Contratti',
+    'version': '1.0.0',
+    'summary': 'Inserimenti Contratti Agenti',
+    'description': 'Inserimenti Contratti Agenti',
+    'category': '',
+    'author': 'IlRey',
+    'maintainer': 'IlRey',
+    'website': 'https://github.com/ilrey',
+    'license': 'LGPL-3',
+    'depends': [],
+    'data': [],
+    'images': [],
+    'installable': True,
+    'auto_install': False,
+    'application': False,
+}
