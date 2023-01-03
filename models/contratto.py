@@ -7,4 +7,4 @@ class ContrattiContratto(models.Model):
     Con_CognomeClienteContratto = fields.Char(string='Cognome')
     Con_NomeCliente = fields.Char(string='Nome')
     Con_CodFiscaleCliente = fields.Char(string='Codice Fiscale')
-    Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identità'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])
+    Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identita'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])
