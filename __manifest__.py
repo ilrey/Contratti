@@ -9,7 +9,9 @@
     'website': 'https://github.com/ilrey',
     'license': 'LGPL-3',
     'depends': [],
-    'data': [],
+    'data': [
+        'views/menu.xml'
+        ],
     'images': [],
     'installable': True,
     'auto_install': False,
