@@ -44,7 +44,7 @@
 						<group>
 							<field name="Con_CodFiscaleCliente"/>
 							<field name="Con_TipoDocumento" string="Tipo Documento"/>
-							<field name="Con_Active" invisible="1"/>
+							<field name="active" invisible="1"/>
 						</group>
 					</group>
 				</sheet>
