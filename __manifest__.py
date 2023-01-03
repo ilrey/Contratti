@@ -10,7 +10,8 @@
     'license': 'LGPL-3',
     'depends': [],
     'data': [
-        'views/menu.xml'
+        'views/menu.xml',
+        'views/contratto_view.xml'
         ],
     'images': [],
     'installable': True,
