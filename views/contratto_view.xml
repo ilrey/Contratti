@@ -15,7 +15,18 @@
 		</field>
 	</record>
 
+	
+	<record id="view_contratti_contratto_graph" model="ir.ui.view">
+		<field name="name">contratti.contratto.tree</field>
+		<field name="model">contratti.contratto</field>
+		<field name="arch" type="xml">
+			<graph>
+				<field name="user_id" string="Agente"/>
+			</graph>
+		</field>
+	</record>
 
+	
 	<record id="view_contratti_contratto_search" model="ir.ui.view">
 		<field name="name">contratti.contratto.search</field>
 		<field name="model">contratti.contratto</field>
