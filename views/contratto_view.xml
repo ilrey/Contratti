@@ -38,14 +38,33 @@
 					</p>
 					<group>
 						<group>
-							<field name="Con_CognomeClienteContratto"/>
-							<field name="Con_NomeCliente"/>
-							<field name="user_id" string="Agente"/>
+							<group>
+								<field name="Con_CognomeClienteContratto"/>
+								<field name="Con_NomeCliente"/>
+								<field name="Con_CodFiscaleCliente"/>
+							</group>
+							<group>
+								<field name="Con_TipoDocumento" string="Tipo Documento"/>
+								<field name="Con_Numero"/>
+								<field name="Con_RilasciatoDa"/>
+								<field name="Con_DataRilascio"/>
+							</group>
+							<group>
+								<field name="Con_Telefono"/>
+								<field name="Con_Cellulare"/>
+								<field name="Con_Email"/>
+								<field name="Con_Pec"/>								
+							</group>
 						</group>
 						<group>
-							<field name="Con_CodFiscaleCliente"/>
-							<field name="Con_TipoDocumento" string="Tipo Documento"/>
+							<b>Indirizzo di Residenza</b>							
+							<field name="Con_Indirizzo"/>
+							<field name="Con_Civico"/>
+							<field name="Con_Scala"/>
+							<field name="Con_Interno"/>
+							<field name="Con_Citta"/>														
 							<field name="active" invisible="1"/>
+							<field name="user_id" string="Agente"/>
 						</group>
 					</group>
 				</sheet>
