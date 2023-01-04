@@ -15,7 +15,7 @@
 		</field>
 	</record>
 
-
+	
 	<record id="view_contratti_contratto_graph" model="ir.ui.view">
 		<field name="name">contratti.contratto.tree</field>
 		<field name="model">contratti.contratto</field>
@@ -26,7 +26,7 @@
 		</field>
 	</record>
 
-
+	
 	<record id="view_contratti_contratto_search" model="ir.ui.view">
 		<field name="name">contratti.contratto.search</field>
 		<field name="model">contratti.contratto</field>
@@ -82,8 +82,7 @@
 					</group>
 					<notebook>
 						<page string="Documento cliente">
-							<!--context="{'default_name': ' '}"-->
-							<button name="open_file_upload" type="object"  string="Carica/Visualizza Documento"></button>
+							<button name="open_file_upload" type="object" context="{'default_directory_id': 'Contratti'}" string="Carica/Visualizza Documento"></button>
 						</page>
 						<page string="Contratto">
 							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
