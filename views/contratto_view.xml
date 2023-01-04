@@ -8,7 +8,9 @@
 			<tree>
 				<field name="Con_CognomeClienteContratto"/>
 				<field name="Con_NomeCliente"/>
-				<field name="Con_CodFiscaleCliente"/>
+				<field name="Con_Cellulare"/>
+				<field name="Con_Email"/>
+				<field name="user_id" string="Agente"/>
 			</tree>
 		</field>
 	</record>

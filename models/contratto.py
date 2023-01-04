@@ -40,4 +40,13 @@ class ContrattiContratto(models.Model):
             'view_mode': 'form',
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
-            
+    
+
+    def carica_contratto(self):
+        return{
+            'res_model': 'contratti.contratto',
+            #'res_id': 12,
+            'type': 'ir.actions.act_window',
+            'view_mode': 'form',
+            'view_id': self.env.ref('Contratti.view_contratti_contratto_form').id,
+            }
