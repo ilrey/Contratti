@@ -69,13 +69,15 @@
 					</group>
 					<notebook>
 						<page string="Documento cliente">
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento">
+
+							<button name="open_file_upload" position='attributes'>
 								<attribute name="context">
 									{
 									'name': 'prova_nome',
 									}
 								</attribute>
 							</button>
+
 						</page>
 						<page string="Contratto">
 							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
