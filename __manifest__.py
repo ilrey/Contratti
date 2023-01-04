@@ -8,7 +8,7 @@
     'maintainer': 'IlRey',
     'website': 'https://github.com/ilrey',
     'license': 'LGPL-3',
-    'depends': ['base'],
+    'depends': ['base', 'dms'],
     'data': [
         'security/ir.model.access.csv',
         'views/menu.xml',
