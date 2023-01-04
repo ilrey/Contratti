@@ -69,7 +69,13 @@
 					</group>
 					<notebook>
 						<page string="Documento cliente">
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento">
+								<attribute name="context">
+									{
+									'name': 'prova_nome',
+									}
+								</attribute>
+							</button>
 						</page>
 						<page string="Contratto">
 							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
@@ -89,7 +95,7 @@
 		<field name="type">ir.actions.act_window</field>
 		<field name="res_model">contratti.contratto</field>
 		<field name="view_mode">tree,form,graph</field>
-		<field name="context">{'directory_id': 'Contratti'}</field>
+		<field name="context">{}</field>
 		<field name="help" type="html">
 			<p class="o_view_nocontent_smiling_face">
 				Inserisci il tuo primo contratto!
