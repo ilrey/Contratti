@@ -13,7 +13,7 @@
 		</field>
 	</record>
 
-	
+
 	<record id="view_contratti_contratto_search" model="ir.ui.view">
 		<field name="name">contratti.contratto.search</field>
 		<field name="model">contratti.contratto</field>
@@ -26,7 +26,7 @@
 		</field>
 	</record>
 
-	
+
 	<record id="view_contratti_contratto_form" model="ir.ui.view">
 		<field name="name">contratti.contratto.form</field>
 		<field name="model">contratti.contratto</field>
@@ -53,20 +53,24 @@
 								<field name="Con_Telefono"/>
 								<field name="Con_Cellulare"/>
 								<field name="Con_Email"/>
-								<field name="Con_Pec"/>								
+								<field name="Con_Pec"/>
 							</group>
 						</group>
 						<group>
-							<b>Indirizzo di Residenza</b>							
+							<b>Indirizzo di Residenza</b>
 							<field name="Con_Indirizzo"/>
 							<field name="Con_Civico"/>
 							<field name="Con_Scala"/>
 							<field name="Con_Interno"/>
-							<field name="Con_Citta"/>														
+							<field name="Con_Citta"/>
 							<field name="active" invisible="1"/>
 							<field name="user_id" string="Agente"/>
 						</group>
 					</group>
+					<notebook>
+						<page string="Documento"></page>
+						<page string="Contratto"></page>
+					</notebook>
 				</sheet>
 			</form>
 		</field>
@@ -85,5 +89,5 @@
 			</p>
 		</field>
 	</record>
-	
+
 </odoo>
