@@ -29,3 +29,12 @@ class ContrattiContratto(models.Model):
     active = fields.Boolean(string="Active", default=True)
     user_id = fields.Many2one('res.users', string='Responsible', tracking=True,  default=lambda self: self.env.user)
 
+
+    def open_file_upload(self):
+        return{
+            'res_model': 'dms.file',
+            'type': 'ir.actions.act_window',
+            'view_mode': 'form',
+            'view_id': self.env.ref('view_dms_file_new_form').id
+            }
+            
