@@ -68,11 +68,15 @@
 						</group>
 					</group>
 					<notebook>
-						<page string="Documento">
-							<button name="open_file_upload" type="object" string="Carica Documento"></button>
+						<page string="Documento cliente">
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</page>
-						<page string="Contratto"></page>
-						<page string="Note"></page>
+						<page string="Contratto">
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
+						</page>
+						<page string="Note">
+							<field name="Con_Note"/>
+						</page>
 					</notebook>
 				</sheet>
 			</form>

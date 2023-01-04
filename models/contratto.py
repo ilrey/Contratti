@@ -25,6 +25,8 @@ class ContrattiContratto(models.Model):
     Con_Scala = fields.Char(string='Scala')
     Con_Interno = fields.Char(string='Interno')
     Con_Citta = fields.Char(string="Citta'")
+
+    Con_Note = fields.Html('Note')
     
     active = fields.Boolean(string="Active", default=True)
     user_id = fields.Many2one('res.users', string='Responsible', tracking=True,  default=lambda self: self.env.user)
