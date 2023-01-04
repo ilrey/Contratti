@@ -82,7 +82,7 @@
 					</group>
 					<notebook>
 						<page string="Documento cliente">
-							<button name="open_file_upload" type="object" context="{'name': 'prova1'}" string="Carica/Visualizza Documento"></button>
+							<button name="open_file_upload" type="object" context="{'default_name': 'prova1'}" string="Carica/Visualizza Documento"></button>
 						</page>
 						<page string="Contratto">
 							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
