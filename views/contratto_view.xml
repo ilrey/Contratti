@@ -39,20 +39,20 @@
 					<group>
 						<group>
 							<group>
-								<field name="Con_CognomeClienteContratto"/>
-								<field name="Con_NomeCliente"/>
-								<field name="Con_CodFiscaleCliente"/>
+								<field name="Con_CognomeClienteContratto" required="1"/>
+								<field name="Con_NomeCliente" required="1"/>
+								<field name="Con_CodFiscaleCliente" required="1"/>
 							</group>
 							<group>
-								<field name="Con_TipoDocumento" string="Tipo Documento"/>
-								<field name="Con_Numero"/>
-								<field name="Con_RilasciatoDa"/>
-								<field name="Con_DataRilascio"/>
+								<field name="Con_TipoDocumento" string="Tipo Documento" required="1"/>
+								<field name="Con_Numero" required="1"/>
+								<field name="Con_RilasciatoDa" required="1"/>
+								<field name="Con_DataRilascio" required="1"/>
 							</group>
 							<group>
 								<field name="Con_Telefono"/>
-								<field name="Con_Cellulare"/>
-								<field name="Con_Email"/>
+								<field name="Con_Cellulare" required="1"/>
+								<field name="Con_Email" required="1"/>
 								<field name="Con_Pec"/>
 							</group>
 						</group>
@@ -69,7 +69,7 @@
 					</group>
 					<notebook>
 						<page string="Documento">
-							<button name="open_file_upload" type="object" string="Carica Documento"></button>
+							<!--<button name="open_file_upload" type="object" string="Carica Documento"></button>-->
 						</page>
 						<page string="Contratto"></page>
 						<page string="Note"></page>
