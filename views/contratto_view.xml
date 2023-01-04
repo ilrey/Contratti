@@ -81,8 +81,9 @@
 						</group>
 					</group>
 					<notebook>
+						<!--context="{'default_directory_id': '11'}"-->
 						<page string="Documento cliente">
-							<button name="open_file_upload" type="object" context="{'default_directory_id': '11'}" string="Carica/Visualizza Documento"></button>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</page>
 						<page string="Contratto">
 							<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
