@@ -39,6 +39,6 @@ class ContrattiContratto(models.Model):
             'type': 'ir.actions.act_window',
             'view_mode': 'form',
             'view_id': self.env.ref('dms.view_dms_file_form').id,
-            'name': 'prova'
+            self.name: 'prova'
             }
             
