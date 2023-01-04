@@ -61,6 +61,7 @@
 								<field name="Con_Numero" required="1"/>
 								<field name="Con_RilasciatoDa" required="1"/>
 								<field name="Con_DataRilascio" required="1"/>
+								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
 							</group>
 							<group>
 								<field name="Con_Telefono"/>

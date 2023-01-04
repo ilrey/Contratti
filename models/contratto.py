@@ -19,6 +19,7 @@ class ContrattiContratto(models.Model):
     Con_Cellulare = fields.Char(string='Cellulare')
     Con_Email = fields.Char(string='Email')
     Con_Pec = fields.Char(string='PEC')
+    Con_MetodoPagamento = fields.Selection([('iban','Iban'), ('bollettino', 'Bollettino'), ('finanziamento', 'Finanziamento')])   
      
     Con_Indirizzo = fields.Char(string='Indirizzo')
     Con_Civico = fields.Char(string='N.Civico')
