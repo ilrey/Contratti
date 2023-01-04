@@ -32,9 +32,9 @@ class ContrattiContratto(models.Model):
 
     def open_file_upload(self):
         return{
-            'res_model': 'dms',
+            'res_model': 'dms.file',
             'type': 'ir.actions.act_window',
             'view_mode': 'form',
-            'view_id': self.env.ref('view_dms_file_new_form').id
+            'view_id': self.env.ref('dms.view_dms_file_form').id
             }
             
