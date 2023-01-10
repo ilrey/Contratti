@@ -47,8 +47,8 @@
 			<form>
 				<sheet>
 					<!--ANAGRAFICA-->
-					<p style="font-size:13pt; background-color:tomato;">
-						<b>DATI DEL CLIENTE</b>
+					<p style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b style="color: white;">DATI DEL CLIENTE</b>
 					</p>
 					<group>
 						<group>
@@ -86,8 +86,8 @@
 						</group>
 					</group>
 					<!--TELEFONIA-->
-					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}" style="font-size:13pt; background-color:tomato;">
-						<b>TELEFONIA</b>
+					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b  style="color: white;">TELEFONIA</b>
 					</p>
 					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
 						<group>
@@ -101,8 +101,8 @@
 						</group>
 					</group>
 					<!--ENERGIA-->
-					<p attrs="{'invisible': [('Con_Pod_bool', '=', False)]}" style="font-size:13pt; background-color:tomato;">
-						<b>LUCE</b>
+					<p attrs="{'invisible': [('Con_Pod_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b  style="color: white;">LUCE</b>
 					</p>
 					<group attrs="{'invisible': [('Con_Pod_bool', '=', False)]}">
 						<group>
@@ -119,8 +119,8 @@
 							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
 						</group>
 					</group>
-					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato;">
-						<b>GAS</b>
+					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b  style="color: white;">GAS</b>
 					</p>
 					<group attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}">
 						<group>
