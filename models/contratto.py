@@ -29,38 +29,38 @@ class ContrattiContratto(models.Model):
     Con_Citta = fields.Char(string="Citta'")
 
     Con_Note = fields.Html('Note')
-    #endregion 
+    ##endregion 
 
-    #region Telefonia
-    Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
+    ##region Telefonia
+    #Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
 
-    Con_GestoreAttuale = fields.Selection([('nuoca','Nuova Attivazione'), ('vuoto1', ' '), ('vuoto2', ' ')])
-    Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')
-    Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
-    Con_TelefoniAttivati = fields.Char(string='Telefoni Attivati:')
-    Con_LineeAttive = fields.Char(string='N. Linee Attive:')
-    #endregion
+    #Con_GestoreAttuale = fields.Selection([('nuoca','Nuova Attivazione'), ('vuoto1', ' '), ('vuoto2', ' ')])
+    #Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')
+    #Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
+    #Con_TelefoniAttivati = fields.Char(string='Telefoni Attivati:')
+    #Con_LineeAttive = fields.Char(string='N. Linee Attive:')
+    ##endregion
     
-    Con_Energia = fields.Boolean(string="Energia", default=False)
-    Con_Pod = fields.Char(string='Pod:')
-    Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
-    Con_Pod_AttSocVendita = fields.Char(string='Attuale società vendita:')
-    Con_Pod_Potenzakvw = fields.Char(string='Potenza KW:')
-    Con_Pod_Distributore = fields.Char(string='Distributore di zona:')
-    Con_Pod_ConsAnnuo= fields.Char(string='Consumo annuo:')
-    Con_Pod_DataAttivazione= fields.Date(string='Data attivazione:')
-    Con_Pod_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
+    #Con_Energia = fields.Boolean(string="Energia", default=False)
+    #Con_Pod = fields.Char(string='Pod:')
+    #Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
+    #Con_Pod_AttSocVendita = fields.Char(string='Attuale società vendita:')
+    #Con_Pod_Potenzakvw = fields.Char(string='Potenza KW:')
+    #Con_Pod_Distributore = fields.Char(string='Distributore di zona:')
+    #Con_Pod_ConsAnnuo= fields.Char(string='Consumo annuo:')
+    #Con_Pod_DataAttivazione= fields.Date(string='Data attivazione:')
+    #Con_Pod_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
 
-    Con_Pdr = fields.Char(string='Pdr:')
-    Con_Pdr_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
-    Con_Pdr_AttSocVendita = fields.Char(string='Attuale società vendita:')
-    Con_Pdr_Potenzakvw = fields.Char(string='Potenza KW:')
-    Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
-    Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
-    Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
-    Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
-    Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
-    Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
+    #Con_Pdr = fields.Char(string='Pdr:')
+    #Con_Pdr_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
+    #Con_Pdr_AttSocVendita = fields.Char(string='Attuale società vendita:')
+    #Con_Pdr_Potenzakvw = fields.Char(string='Potenza KW:')
+    #Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
+    #Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
+    #Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
+    #Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
+    #Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
+    #Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
 
 
     active = fields.Boolean(string="Active", default=True)
