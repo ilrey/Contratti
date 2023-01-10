@@ -45,7 +45,7 @@
 		<field name="model">contratti.contratto</field>
 		<field name="arch" type="xml">
 			<form>
-				<sheet>					
+				<sheet>
 					<!--ANAGRAFICA-->
 					<group string="Dati del Cliente">
 						<group>
@@ -106,7 +106,7 @@
 							<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_AttDis" style="text-transform: uppercase;"/>
+							<field name="Con_Pod_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
 							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
 						</group>
 					</group>
@@ -123,11 +123,11 @@
 							<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_AttDis" style="text-transform: uppercase;"/>
+							<field name="Con_Pdr_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
 						</group>
 					</group>
 
-					
+
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
 						<page string="Documento cliente">
