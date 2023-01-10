@@ -41,7 +41,7 @@ class ContrattiContratto(models.Model):
     Con_LineeAttive = fields.Char(string='N. Linee Attive:')
     #endregion
     
-    Con_Energia = fields.Boolean(string="Energia", default=False)
+    #Con_Energia = fields.Boolean(string="Energia", default=False)
     Con_Pod = fields.Char(string='Pod:')
     Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
     Con_Pod_AttSocVendita = fields.Char(string='Attuale società vendita:')
