@@ -84,7 +84,7 @@
 							<field name="Con_Energia"/>
 						</group>
 					</group>
-					<!--TELEFONIA--><!--
+					<!--TELEFONIA-->
 					<group attrs="{'invisible': [('Con_Telefonia', '=', 'False')]}">
 						<group>
 							<field name="Con_GestoreAttuale"/>
@@ -95,7 +95,7 @@
 							<field name="Con_TelefoniAttivati"/>
 							<field name="Con_LineeAttive"/>
 						</group>
-					</group>-->
+					</group>
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
 						<page string="Documento cliente">
