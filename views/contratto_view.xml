@@ -84,11 +84,9 @@
 							<field name="Con_Energia"/>
 						</group>
 					</group>
+					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}"><b>TELEFONIA</b></p>
 					<!--TELEFONIA-->
-					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">					
-						<p>
-							<b>TELEFONIA</b>
-						</p>
+					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
 						<group>
 							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
 							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
