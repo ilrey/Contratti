@@ -6,13 +6,14 @@ class ContrattiContratto(models.Model):
     _name = "contratti.contratto"
     _description = "Contratto"
 
+    #region Default
     Con_CognomeClienteContratto = fields.Char(string='Cognome')
     Con_NomeCliente = fields.Char(string='Nome')
     Con_CodFiscaleCliente = fields.Char(string='Codice Fiscale')
 
     Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identita'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])   
     Con_Numero = fields.Char(string='Numero')
-    Con_RilasciatoDa = fields.Char(string='Rilasciato Da:')
+    Con_RilasciatoDa = fields.Selection([('comune','Comune'), ('mctc', 'MCTC'), ('uco', 'UCO'), ('questura','Questura')])   
     Con_DataRilascio = fields.Date(string='Data rilascio')
 
     Con_Telefono = fields.Char(string='Telefono')
@@ -28,7 +29,25 @@ class ContrattiContratto(models.Model):
     Con_Citta = fields.Char(string="Citta'")
 
     Con_Note = fields.Html('Note')
+    #endregion 
+
+    #region Telefonia
+    Con_Telefonia = fields.Boolean(string="Telefonia", default=True)
+
+    Con_GestoreAttuale = fields.Selection([('nuoca','Nuova Attivazione'), ('vuoto1', ' '), ('vuoto2', ' ')])
+    Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')
+    Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
+    Con_TelefoniAttivati = fields.Char(string='Telefoni Attivati:')
+    Con_LineeAttive = fields.Char(string='N. Linee Attive:')
+    #endregion
     
+    Con_Energia = fields.Boolean(string="Energia", default=True)
+
+
+
+
+
+
     active = fields.Boolean(string="Active", default=True)
     user_id = fields.Many2one('res.users', string='Responsible', tracking=True,  default=lambda self: self.env.user)
 

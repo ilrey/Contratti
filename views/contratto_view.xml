@@ -59,7 +59,7 @@
 							<group>
 								<field name="Con_TipoDocumento" string="Tipo Documento" required="1"/>
 								<field name="Con_Numero" required="1"/>
-								<field name="Con_RilasciatoDa" required="1"/>
+								<field name="Con_RilasciatoDa" required="1" string="Rilasciato da:"/>
 								<field name="Con_DataRilascio" required="1"/>
 								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
 							</group>
@@ -79,6 +79,8 @@
 							<field name="Con_Citta"/>
 							<field name="active" invisible="1"/>
 							<field name="user_id" string="Agente"/>
+							<field name="Con_Telefonia"/>
+							<field name="Con_Energia"/>
 						</group>
 					</group>
 					<notebook>
