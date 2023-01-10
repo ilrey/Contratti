@@ -41,7 +41,9 @@ class ContrattiContratto(models.Model):
     #endregion
 
     #region Energia
-    Con_Energia = fields.Boolean(string="Energia", default=False)
+    Con_Pod_bool = fields.Boolean(string="Luce", default=False)
+    Con_Pdr_bool = fields.Boolean(string="Gas", default=False)
+
     Con_Pod = fields.Char(string='POD:')
     Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
     Con_Pod_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
@@ -52,9 +54,7 @@ class ContrattiContratto(models.Model):
     Con_Pod_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
 
     Con_Pdr = fields.Char(string='PDR:')
-    Con_Pdr_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
     Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
-    Con_Pdr_Potenzakvw = fields.Char(string='Potenza KW:')
     Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
     Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
     Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
