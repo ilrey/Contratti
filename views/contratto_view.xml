@@ -85,7 +85,7 @@
 						</group>
 					</group>
 					<!--TELEFONIA-->
-					<group attrs="{'invisible': [('Con_Telefonia', '=', 'False')]}">
+					<group attrs="{'invisible': [('Con_Telefonia', '!=', 'False')]}">
 						<group>
 							<field name="Con_GestoreAttuale"/>
 							<field name="Con_OffertaAttuale"/>
