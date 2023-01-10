@@ -56,6 +56,10 @@
 								<field name="Con_CognomeClienteContratto" required="1" style="text-transform: uppercase;"/>
 								<field name="Con_NomeCliente" required="1" style="text-transform: uppercase;"/>
 								<field name="Con_CodFiscaleCliente" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_Telefono" style="text-transform: uppercase;"/>
+								<field name="Con_Cellulare" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_Email" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_Pec" style="text-transform: uppercase;"/>
 							</group>
 							<group>
 								<field name="Con_TipoDocumento" string="Tipo Documento" required="1"/>
@@ -64,25 +68,22 @@
 								<field name="Con_DataRilascio" required="1"/>
 								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
 							</group>
-							<group>
-								<field name="Con_Telefono" style="text-transform: uppercase;"/>
-								<field name="Con_Cellulare" required="1" style="text-transform: uppercase;"/>
-								<field name="Con_Email" required="1" style="text-transform: uppercase;"/>
-								<field name="Con_Pec" style="text-transform: uppercase;"/>
-							</group>
 						</group>
-						<group>
-							<b>Indirizzo di Residenza</b>
-							<field name="Con_Indirizzo" style="text-transform: uppercase;"/>
-							<field name="Con_Civico" style="text-transform: uppercase;"/>
-							<field name="Con_Scala" style="text-transform: uppercase;"/>
-							<field name="Con_Interno" style="text-transform: uppercase;"/>
-							<field name="Con_Citta" style="text-transform: uppercase;"/>
-							<field name="active" invisible="1"/>
-							<field name="user_id" string="Agente"/>
-							<field name="Con_Telefonia"/>
-							<field name="Con_Pod_bool"/>
-							<field name="Con_Pdr_bool"/>
+						<group string="Indirizzo di residenza">
+							<group>
+								<field name="Con_Indirizzo" style="text-transform: uppercase;"/>
+								<field name="Con_Civico" style="text-transform: uppercase;"/>
+								<field name="Con_Scala" style="text-transform: uppercase;"/>
+								<field name="Con_Interno" style="text-transform: uppercase;"/>
+								<field name="Con_Citta" style="text-transform: uppercase;"/>
+							</group>
+							<group>
+								<field name="active" invisible="1"/>
+								<field name="user_id" string="Agente"/>
+								<field name="Con_Telefonia"/>
+								<field name="Con_Pod_bool"/>
+								<field name="Con_Pdr_bool"/>
+							</group>													
 						</group>
 					</group>
 					<!--TELEFONIA-->
@@ -110,9 +111,9 @@
 							<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
-						</group>
-						<group>
 							<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>
+						</group>
+						<group>							
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
@@ -127,13 +128,12 @@
 							<field name="Con_Pdr" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_Distributore" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>
+							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>							
 						</group>
 						<group>
-							<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
+							<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
+							<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>							
 							<field name="Con_Pdr_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
 						</group>
 					</group>
