@@ -33,14 +33,14 @@ class ContrattiContratto(models.Model):
 
     #region Telefonia
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
-
     Con_GestoreAttuale = fields.Selection([('nuoca','Nuova Attivazione'), ('vuoto1', 'vuoto'), ('vuoto2', 'vuoto2')])
     Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')
     Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
     Con_TelefoniAttivati = fields.Char(string='Telefoni Attivati:')
     Con_LineeAttive = fields.Char(string='N. Linee Attive:')
     #endregion
-    
+
+    #region Energia
     Con_Energia = fields.Boolean(string="Energia", default=False)
     Con_Pod = fields.Char(string='POD:')
     Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
@@ -61,7 +61,7 @@ class ContrattiContratto(models.Model):
     Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
     Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
     Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
-
+    #endregion
 
     active = fields.Boolean(string="Active", default=True)
     user_id = fields.Many2one('res.users', string='Responsible', tracking=True,  default=lambda self: self.env.user)
