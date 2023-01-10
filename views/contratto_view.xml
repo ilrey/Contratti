@@ -53,31 +53,31 @@
 					<group>
 						<group>
 							<group>
-								<field name="Con_CognomeClienteContratto" required="1"/>
-								<field name="Con_NomeCliente" required="1"/>
-								<field name="Con_CodFiscaleCliente" required="1"/>
+								<field name="Con_CognomeClienteContratto" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_NomeCliente" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_CodFiscaleCliente" required="1" style="text-transform: uppercase;"/>
 							</group>
 							<group>
 								<field name="Con_TipoDocumento" string="Tipo Documento" required="1"/>
-								<field name="Con_Numero" required="1"/>
+								<field name="Con_Numero" required="1" style="text-transform: uppercase;"/>
 								<field name="Con_RilasciatoDa" required="1" string="Rilasciato da:"/>
 								<field name="Con_DataRilascio" required="1"/>
 								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
 							</group>
 							<group>
-								<field name="Con_Telefono"/>
-								<field name="Con_Cellulare" required="1"/>
-								<field name="Con_Email" required="1"/>
-								<field name="Con_Pec"/>
+								<field name="Con_Telefono" style="text-transform: uppercase;"/>
+								<field name="Con_Cellulare" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_Email" required="1" style="text-transform: uppercase;"/>
+								<field name="Con_Pec" style="text-transform: uppercase;"/>
 							</group>
 						</group>
 						<group>
 							<b>Indirizzo di Residenza</b>
-							<field name="Con_Indirizzo"/>
-							<field name="Con_Civico"/>
-							<field name="Con_Scala"/>
-							<field name="Con_Interno"/>
-							<field name="Con_Citta"/>
+							<field name="Con_Indirizzo" style="text-transform: uppercase;"/>
+							<field name="Con_Civico" style="text-transform: uppercase;"/>
+							<field name="Con_Scala" style="text-transform: uppercase;"/>
+							<field name="Con_Interno" style="text-transform: uppercase;"/>
+							<field name="Con_Citta" style="text-transform: uppercase;"/>
 							<field name="active" invisible="1"/>
 							<field name="user_id" string="Agente"/>
 							<field name="Con_Telefonia"/>
@@ -85,19 +85,18 @@
 						</group>
 					</group>
 					<!--TELEFONIA-->
-					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
-						<p></p>
+					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">					
 						<p>
-							<b>Telefonia</b>
+							<b>TELEFONIA</b>
 						</p>
 						<group>
-							<field name="Con_GestoreAttuale" string="Gestore Attuale:"/>
-							<field name="Con_OffertaAttuale"/>
-							<field name="Con_CodMigrazione"/>
+							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
+							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
+							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
 						</group>
 						<group>
-							<field name="Con_TelefoniAttivati"/>
-							<field name="Con_LineeAttive"/>
+							<field name="Con_TelefoniAttivati" style="text-transform: uppercase;"/>
+							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
 						</group>
 					</group>
 					<notebook>
