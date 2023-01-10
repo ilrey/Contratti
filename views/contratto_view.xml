@@ -86,8 +86,12 @@
 					</group>
 					<!--TELEFONIA-->
 					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
+						<p></p>
+						<p>
+							<b>Telefonia</b>
+						</p>
 						<group>
-							<field name="Con_GestoreAttuale"/>
+							<field name="Con_GestoreAttuale" string="Gestore Attuale:"/>
 							<field name="Con_OffertaAttuale"/>
 							<field name="Con_CodMigrazione"/>
 						</group>
