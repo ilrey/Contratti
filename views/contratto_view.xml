@@ -99,35 +99,39 @@
 					<!--ENERGIA-->					
 					<group string="ENERGIA" attrs="{'invisible': [('Con_Energia', '=', False)]}">
 						<!--POD-->
-						<group>
-							<field name="Con_Pod" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>							
-						</group>
-						<group>
-							<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_AttDis" style="text-transform: uppercase;"/>
-							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
-						</group>
+						<gruop string="POD">
+							<group>
+								<field name="Con_Pod" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>							
+							</group>
+							<group>
+								<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_AttDis" style="text-transform: uppercase;"/>
+								<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
+							</group>							
+						</gruop>						
 						<!--PDR-->
 						<group>
-							<field name="Con_Pdr" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_ProvMervato" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_Potenzakvw" style="text-transform: uppercase;"/>							
-							<field name="Con_Pdr_Distributore" style="text-transform: uppercase;"/>							
-						</group>
-						<group>
-							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_AttDis" style="text-transform: uppercase;"/>
-						</group>
+							<group>
+								<field name="Con_Pdr" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_ProvMervato" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_Potenzakvw" style="text-transform: uppercase;"/>							
+								<field name="Con_Pdr_Distributore" style="text-transform: uppercase;"/>							
+							</group>
+							<group>
+								<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
+								<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
+								<field name="Con_Pdr_AttDis" style="text-transform: uppercase;"/>
+							</group>
+						</group>						
 					</group>
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
