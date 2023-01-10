@@ -15,7 +15,7 @@
 		</field>
 	</record>
 
-	
+
 	<record id="view_contratti_contratto_graph" model="ir.ui.view">
 		<field name="name">contratti.contratto.tree</field>
 		<field name="model">contratti.contratto</field>
@@ -26,7 +26,7 @@
 		</field>
 	</record>
 
-	
+
 	<record id="view_contratti_contratto_search" model="ir.ui.view">
 		<field name="name">contratti.contratto.search</field>
 		<field name="model">contratti.contratto</field>
@@ -49,6 +49,7 @@
 					<p>
 						<b>Dati del Cliente</b>
 					</p>
+					<!--ANAGRAFICA-->
 					<group>
 						<group>
 							<group>
@@ -81,6 +82,18 @@
 							<field name="user_id" string="Agente"/>
 							<field name="Con_Telefonia"/>
 							<field name="Con_Energia"/>
+						</group>
+					</group>
+					<!--TELEFONIA-->
+					<group attrs="{'invisible': [('Con_Telefonia', '=', 'False')]}">
+						<group>
+							<field name="Con_GestoreAttuale"/>
+							<field name="Con_OffertaAttuale"/>
+							<field name="Con_CodMigrazione"/>
+						</group>
+						<group>
+							<field name="Con_TelefoniAttivati"/>
+							<field name="Con_LineeAttive"/>
 						</group>
 					</group>
 					<notebook>
