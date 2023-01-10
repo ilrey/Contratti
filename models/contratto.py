@@ -32,7 +32,7 @@ class ContrattiContratto(models.Model):
     #endregion 
 
     #region Telefonia
-    Con_Telefonia = fields.Boolean(string="Telefonia", default=True)
+    Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
 
     Con_GestoreAttuale = fields.Selection([('nuoca','Nuova Attivazione'), ('vuoto1', 'vuoto'), ('vuoto2', 'vuoto2')])
     Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')

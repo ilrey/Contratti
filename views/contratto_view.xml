@@ -78,10 +78,10 @@
 							<field name="Con_Scala"/>
 							<field name="Con_Interno"/>
 							<field name="Con_Citta"/>
-							<field name="active" invisible="1"/>
+							<field name="active" invisible="1"  widget="boolean_toggle"/>
 							<field name="user_id" string="Agente"/>
-							<field name="Con_Telefonia"/>
-							<field name="Con_Energia"/>
+							<field name="Con_Telefonia" widget="boolean_toggle"/>
+							<field name="Con_Energia"  widget="boolean_toggle"/>
 						</group>
 					</group>
 					<!--TELEFONIA-->
@@ -128,3 +128,6 @@
 	</record>
 
 </odoo>
+
+
+
