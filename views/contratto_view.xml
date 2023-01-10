@@ -47,7 +47,10 @@
 			<form>
 				<sheet>
 					<!--ANAGRAFICA-->
-					<group string="Dati del Cliente">
+					<p style="font-size:13pt;">
+						<b>DATI DEL CLIENTE</b>
+					</p>
+					<group>
 						<group>
 							<group>
 								<field name="Con_CognomeClienteContratto" required="1" style="text-transform: uppercase;"/>
@@ -83,7 +86,10 @@
 						</group>
 					</group>
 					<!--TELEFONIA-->
-					<group string="TELEFONIA" attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
+					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}" style="font-size:13pt;">
+						<b>TELEFONIA</b>
+					</p>
+					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
 						<group>
 							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
 							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
@@ -95,7 +101,10 @@
 						</group>
 					</group>
 					<!--ENERGIA-->
-					<group string="LUCE" attrs="{'invisible': [('Con_Pod_bool', '=', False)]}">
+					<p attrs="{'invisible': [('Con_Pod_bool', '=', False)]}" style="font-size:13pt;">
+						<b>LUCE</b>
+					</p>
+					<group attrs="{'invisible': [('Con_Pod_bool', '=', False)]}">
 						<group>
 							<field name="Con_Pod" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
@@ -110,8 +119,10 @@
 							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
 						</group>
 					</group>
-
-					<group string="GAS" attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}">
+					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt;">
+						<b>GAS</b>
+					</p>
+					<group attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}">
 						<group>
 							<field name="Con_Pdr" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
