@@ -84,8 +84,8 @@
 							<field name="Con_Energia"/>
 						</group>
 					</group>
-					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}"><b>TELEFONIA</b></p>
 					<!--TELEFONIA-->
+					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}"><b>TELEFONIA</b></p>
 					<group attrs="{'invisible': [('Con_Telefonia', '=', False)]}">
 						<group>
 							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
@@ -96,6 +96,19 @@
 							<field name="Con_TelefoniAttivati" style="text-transform: uppercase;"/>
 							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
 						</group>
+					</group>
+					<!--ENERGIA-->
+					<p attrs="{'invisible': [('Con_Energia', '=', False)]}"><b>ENERGIA</b></p>
+					<group attrs="{'invisible': [('Con_Energia', '=', False)]}">
+						<!--<group>
+							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
+							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
+							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
+						</group>
+						<group>
+							<field name="Con_TelefoniAttivati" style="text-transform: uppercase;"/>
+							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
+						</group>-->
 					</group>
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
