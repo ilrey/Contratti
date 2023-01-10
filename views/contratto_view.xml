@@ -98,8 +98,6 @@
 					</group>
 					<!--ENERGIA-->					
 					<group string="ENERGIA" attrs="{'invisible': [('Con_Energia', '=', False)]}">
-						<!--POD-->
-						<gruop string="POD">
 							<group>
 								<field name="Con_Pod" style="text-transform: uppercase;"/>
 								<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
@@ -112,10 +110,8 @@
 								<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
 								<field name="Con_Pod_AttDis" style="text-transform: uppercase;"/>
 								<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
-							</group>							
-						</gruop>						
-						<!--PDR-->
-						<group>
+							</group>
+							<p></p>
 							<group>
 								<field name="Con_Pdr" style="text-transform: uppercase;"/>
 								<field name="Con_Pdr_ProvMervato" style="text-transform: uppercase;"/>
@@ -130,8 +126,7 @@
 								<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
 								<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
 								<field name="Con_Pdr_AttDis" style="text-transform: uppercase;"/>
-							</group>
-						</group>						
+							</group>					
 					</group>
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
