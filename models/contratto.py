@@ -1,6 +1,7 @@
 from dataclasses import field
 from email.policy import default
 from odoo import api, fields, models
+from odoo.exceptions import ValidationError
 
 class ContrattiContratto(models.Model):
     _name = "contratti.contratto"
@@ -75,4 +76,14 @@ class ContrattiContratto(models.Model):
             'view_mode': 'form',
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
+
+    #def map_url(self):
+    #    url_string = ("https://www.google.com/maps/dir/+{},+{},+{}".format(self.x_indirizzo, self.x_civico, self.x_citta))
+    #    if False in (self.x_indirizzo, self.x_civico, self.x_citta):
+    #        raise ValidationError(_("Indirizzo non completo"))
+    #    else:
+    #        return{      
+    #            'type': 'ir.actions.act_url',
+    #            'url': url_string
+    #            }
     
