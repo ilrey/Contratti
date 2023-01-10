@@ -53,14 +53,14 @@ class ContrattiContratto(models.Model):
 
     Con_Pdr = fields.Char(string='PDR:')
     Con_Pdr_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
-    Con_Pdr_AttSocVendita = fields.Char(string='Attuale società vendita:')
-    Con_Pdr_Potenzakvw = fields.Char(string='Potenza KW:')
-    Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
-    Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
-    Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
-    Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
-    Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
-    Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
+    #Con_Pdr_AttSocVendita = fields.Char(string='Attuale società vendita:')
+    #Con_Pdr_Potenzakvw = fields.Char(string='Potenza KW:')
+    #Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
+    #Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
+    #Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
+    #Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
+    #Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
+    #Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
 
 
     active = fields.Boolean(string="Active", default=True)
