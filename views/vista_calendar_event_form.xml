@@ -48,7 +48,7 @@
 						<field name="alarm_ids" widget="many2many_tags" options="{'no_quick_create': True}"/>
 						<!-- <field name="location"/> -->
 						<field name="videocall_location"/>
-						<field name="user_id" widget="many2one_avatar_user" groups="base.group_erp_manager"/>
+						<field name="user_id" widget="many2one_avatar_user"/>
 						<!-- <field name="categ_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/> -->
 					</group>
 				</group>
