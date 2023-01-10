@@ -69,7 +69,7 @@
 								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
 							</group>
 						</group>
-						<group string="Indirizzo di residenza">
+						<group>
 							<group>
 								<field name="Con_Indirizzo" style="text-transform: uppercase;"/>
 								<field name="Con_Civico" style="text-transform: uppercase;"/>
