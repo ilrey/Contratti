@@ -78,7 +78,7 @@ class ContrattiContratto(models.Model):
             }
 
     #def map_url(self):
-    #    url_string = ("https://www.google.com/maps/dir/+{},+{},+{}".format(self.x_indirizzo, self.x_civico, self.x_citta))
+    #    url_string = ("https://www.google.com/maps/dir//+{},+{},+{}".format(self.x_indirizzo, self.x_civico, self.x_citta))
     #    if False in (self.x_indirizzo, self.x_civico, self.x_citta):
     #        raise ValidationError(_("Indirizzo non completo"))
     #    else:
