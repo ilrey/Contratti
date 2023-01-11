@@ -77,7 +77,7 @@ class ContrattiContratto(models.Model):
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
 
-    #for_calendar_module
+    #calendar_module
     #def map_url(self):
     #    url_string = ("https://www.google.com/maps/dir//+{},+{},+{}".format(self.x_indirizzo, self.x_civico, self.x_citta))
     #    if False in (self.x_indirizzo, self.x_civico, self.x_citta):
