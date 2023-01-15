@@ -91,7 +91,7 @@
 							<!--context="{'default_directory_id': '11'}"-->
 							<page string="Documento cliente">
 								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-								<field name="Con_Anag_Documento" widget="many2many_binary"/>
+								<field name="Con_Anag_Documento"/>
 							</page>
 						</notebook>
 					</group>
