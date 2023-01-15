@@ -66,7 +66,7 @@
 								<field name="Con_Numero" required="1" style="text-transform: uppercase;"/>
 								<field name="Con_RilasciatoDa" required="1" string="Rilasciato da:"/>
 								<field name="Con_DataRilascio" required="1"/>
-								<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>
+								<!--<field name="Con_MetodoPagamento" string="Metodo Pagamento"/>-->
 							</group>
 						</group>
 						<group>
@@ -83,9 +83,12 @@
 								<field name="Con_Telefonia"/>
 								<field name="Con_Pod_bool"/>
 								<field name="Con_Pdr_bool"/>
+								<field name="Con_Fotov_bool"/>
+								<field name="Con_Auto_bool"/>								
 							</group>													
 						</group>
 					</group>
+					
 					<!--TELEFONIA-->
 					<p attrs="{'invisible': [('Con_Telefonia', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
 						<b  style="color: white;">TELEFONIA</b>
@@ -94,11 +97,11 @@
 						<group>
 							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
 							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
-							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
 						</group>
 						<group>
-							<field name="Con_TelefoniAttivati" style="text-transform: uppercase;"/>
-							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
+							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
+							<field name="Con_Num_Migrare" style="text-transform: uppercase;"/>							
+							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>							
 						</group>
 					</group>
 					<!--ENERGIA-->
@@ -108,7 +111,7 @@
 					<group attrs="{'invisible': [('Con_Pod_bool', '=', False)]}">
 						<group>
 							<field name="Con_Pod" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>
+							<!--<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>-->
 							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>
@@ -116,8 +119,7 @@
 						<group>							
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
-							<field name="Con_LineeAttive" style="text-transform: uppercase;"/>
+							<!--<field name="Con_Pod_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>-->
 						</group>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -131,13 +133,38 @@
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>							
 						</group>
 						<group>
-							<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>
+							<!--<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>-->
+							<!--<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>-->
 							<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>							
-							<field name="Con_Pdr_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>
+							<!--<field name="Con_Pdr_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>-->
 						</group>
 					</group>
-
+					<!--FOTOVOLTAICO-->
+					<p attrs="{'invisible': [('Con_Fotov_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b  style="color: white;">FOTOVOLTAICO</b>
+					</p>
+					<group attrs="{'invisible': [('Con_Fotov_bool', '=', False)]}">
+						<group>
+							<field name="Con_Fotov_Pompa" string="Gestore Attuale:" style="text-transform: uppercase;"/>
+							<field name="Con_Fotov_PotenzaImp" style="text-transform: uppercase;"/>
+							<field name="Con_Fotov_Potenzabatt" style="text-transform: uppercase;"/>
+						</group>
+						<group>
+							<field name="Con_Fotov_MetodoPagamento" style="text-transform: uppercase;"/>
+							<field name="Con_Fotov_Wallbox" style="text-transform: uppercase;"/>
+						</group>
+					</group>
+					<!--NOLEGGIO AUTO-->
+					<p attrs="{'invisible': [('Con_Auto_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
+						<b  style="color: white;">FOTOVOLTAICO</b>
+					</p>
+					<group attrs="{'invisible': [('Con_Auto_bool', '=', False)]}">
+						<group>
+							<field name="Con_Auto_AutoVenduta" string="Gestore Attuale:" style="text-transform: uppercase;"/>
+							<field name="Con_Fotov_DurataNoleggio" style="text-transform: uppercase;"/>
+						</group>
+					</group>
+					
 
 					<notebook>
 						<!--context="{'default_directory_id': '11'}"-->
