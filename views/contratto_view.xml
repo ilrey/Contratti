@@ -85,7 +85,6 @@
 								<field name="Con_Pdr_bool"/>
 								<field name="Con_Fotov_bool"/>
 								<field name="Con_Auto_bool"/>
-								<field name="prova_field"/>
 							</group>
 						</group>
 						<notebook>
@@ -127,7 +126,6 @@
 						<group>
 							<field name="Con_Pod" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
-							<field name="prova_field"/>
 						</group>
 						<group>
 							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>

@@ -25,7 +25,6 @@ class ContrattiContratto(models.Model):
     Con_Interno = fields.Char(string='Interno')
     Con_Citta = fields.Char(string="Citta'")
     Con_Note = fields.Html('Note')
-    prova_field = fields.Many2one(string = "Pod")
     #endregion 
     
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
