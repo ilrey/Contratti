@@ -91,6 +91,7 @@
 							<!--context="{'default_directory_id': '11'}"-->
 							<page string="Documento cliente">
 								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Anag_Documento" widget="many2many_binary"/>
 							</page>
 						</notebook>
 					</group>
@@ -178,7 +179,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza Contratto"></button>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>

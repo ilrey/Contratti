@@ -25,6 +25,7 @@ class ContrattiContratto(models.Model):
     Con_Interno = fields.Char(string='Interno')
     Con_Citta = fields.Char(string="Citta'")
     Con_Note = fields.Html('Note')
+    Con_Anag_Documento = fields.Binary("Carica Documento", required=True)
     #endregion 
     
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
