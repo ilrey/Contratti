@@ -126,10 +126,10 @@
 							<field name="Con_Pdr" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>							
-						</group>						
+						</group>													
+						<group>
 							<field name="Con_Pdr_PotenzaSMC" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
-						<group>						
 						</group>
 					</group>
 					<!--FOTOVOLTAICO-->
