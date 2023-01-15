@@ -25,8 +25,6 @@ class ContrattiContratto(models.Model):
     Con_Interno = fields.Char(string='Interno')
     Con_Citta = fields.Char(string="Citta'")
     Con_Note = fields.Html('Note')
-    Con_Anag_Documento = fields.Binary(string='Carica Documento')
-    filename = fields.Char()
     #endregion 
     
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
@@ -46,7 +44,6 @@ class ContrattiContratto(models.Model):
     Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
     Con_Num_Migrare = fields.Char(string='Numero da Migrare:')
     Con_Num_Sim = fields.Char(string='Numero SIM:')
-    Con_Tel_Contratto = fields.Binary("Carica Contratto")
     #endregion
 
     #region Energia    
@@ -55,7 +52,6 @@ class ContrattiContratto(models.Model):
     Con_Pod_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
     Con_Pod_Potenzakvw = fields.Char(string='Potenza KW:')
     Con_Pod_ConsAnnuo= fields.Char(string='Consumo annuo:')
-    Con_Pod_Contratto = fields.Binary("Carica Contratto")
     #Con_Pod_DataAttivazione= fields.Date(string='Data attivazione:')
 
      
@@ -63,7 +59,6 @@ class ContrattiContratto(models.Model):
     Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")   
     Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
     Con_Pdr_PotenzaSMC = fields.Char(string='Potenza Standard Metro Cubo:')
-    Con_Pdr_Contratto = fields.Binary("Carica Contratto")
     #endregion
 
 
@@ -73,13 +68,11 @@ class ContrattiContratto(models.Model):
     Con_Fotov_PotenzaImp = fields.Char(string='Potenza impianto:')
     Con_Fotov_Potenzabatt = fields.Char(string='Potenza batteria accumolo:')
     Con_Fotov_Pompa = fields.Char(string='Pompa di calore:')
-    Con_Fotov_Contratto = fields.Binary("Carica Contratto")
     #enregion
 
     #region NoleggioAuto
     Con_Auto_AutoVenduta = fields.Char(string='Auto venduta:')
     Con_Fotov_DurataNoleggio = fields.Char(string='Durata noleggio:')
-    Con_Auto_Contratto = fields.Binary("Carica Contratto")
     #Con_Auto_from_date = fields.Date(string="Register date")
     #Con_Auto_final_date = fields.Date(string="Last date")
     #Con_Auto_total_days = fields.Integer(string="Durata noleggio in gioni:")

@@ -90,9 +90,7 @@
 						<notebook>
 							<!--context="{'default_directory_id': '11'}"-->
 							<page string="Documento cliente">
-								<!--<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>-->
-								<field name="Con_Anag_Documento" filename="filenamee"/>
-								<field name="filename" invisible="1"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 						</notebook>
 					</group>
@@ -113,7 +111,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<field name="Con_Tel_Contratto"  filename="Contratto Telefonia"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -135,7 +133,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<field name="Con_Pod_Contratto"  filename="Contratto Luce"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -157,7 +155,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<field name="Con_Pdr_Contratto"  filename="Contratto Gas"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -180,7 +178,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<field name="Con_Fotov_Contratto"  filename="Contratto Fotovoltaico"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -200,7 +198,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<field name="Con_Auto_Contratto"  filename="Contratto Noleggio Auto"/>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
