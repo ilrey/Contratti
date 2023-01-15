@@ -90,8 +90,8 @@
 						<notebook>
 							<!--context="{'default_directory_id': '11'}"-->
 							<page string="Documento cliente">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-								<field name="Con_Anag_Documento"/>
+								<!--<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>-->
+								<field name="Con_Anag_Documento" string="Documento"/>
 							</page>
 						</notebook>
 					</group>
@@ -112,7 +112,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Tel_Contratto" string="Contratto"/>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -134,7 +134,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Pod_Contratto" string="Contratto"/>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -156,7 +156,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Pdr_Contratto" string="Contratto"/>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -179,7 +179,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Fotov_Contratto" string="Contratto"/>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
@@ -199,7 +199,7 @@
 						</group>
 						<notebook>
 							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+								<field name="Con_Auto_Contratto" string="Contratto"/>
 							</page>
 							<page string="Note">
 								<field name="Con_Note"/>
