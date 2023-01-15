@@ -18,8 +18,7 @@ class ContrattiContratto(models.Model):
     Con_Telefono = fields.Char(string='Telefono')
     Con_Cellulare = fields.Char(string='Cellulare')
     Con_Email = fields.Char(string='Email')
-    Con_Pec = fields.Char(string='PEC')
-    #Con_MetodoPagamento = fields.Selection([('iban','Iban'), ('bollettino', 'Bollettino'), ('finanziamento', 'Finanziamento')])      
+    Con_Pec = fields.Char(string='PEC')    
     Con_Indirizzo = fields.Char(string='Indirizzo')
     Con_Civico = fields.Char(string='N.Civico')
     Con_Scala = fields.Char(string='Scala')
@@ -36,19 +35,18 @@ class ContrattiContratto(models.Model):
 
 
     #region Telefonia 
-    Con_GestoreAttuale = fields.Selection([('nuova','Nuova Attivazione'), ('vuoto1', 'vuoto'), ('vuoto2', 'vuoto2')])
+    Con_GestoreAttuale = fields.Selection([('nuova','Nuova Attivazione'), ('TIM', 'TIM'), ('Vodafone', 'Vodafone'), ('WindTre', 'Wind Tre'), 
+                                           ('Iliad_Italia', 'Iliad Italia'), ('Fastweb', 'Fastweb'), ('CoopVoce', 'CoopVoce'), ('ho', 'ho.'), 
+                                           ('Kena', 'Kena Mobile'), ('Lycamobile', 'Lycamobile'), ('PosteMobile', 'PosteMobile'), ('RabonaMobile', 'Rabona Mobile'), 
+                                           ('Tiscali', 'Tiscali'), ('Illiad', 'Illiad')])
     Con_Tel_MetodoPagamento = fields.Selection([('iban','Iban'), ('cc', 'CC')])
     Con_OffertaAttuale = fields.Char(string='Offerta Attuale:')
     Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
     Con_Num_Migrare = fields.Char(string='Numero da Migrare:')
     Con_Num_Sim = fields.Char(string='Numero SIM:')
-    #Con_LineeAttive = fields.Char(string='N. Linee Attive:')
     #endregion
 
     #region Energia    
-    #Con_Pod_ProvMervato = fields.Boolean(string="Provenienza mercato libero", default=False)
-    #Con_Pod_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
-    #Con_Pod_Distributore = fields.Char(string='Distributore di zona:')
     Con_Pod = fields.Char(string='POD:')
     Con_Pod_MetodoPagamento = fields.Selection([('iban','Iban'), ('bollettino', 'Bollettino'), ('finanziamento', 'Finanziamento')])
     Con_Pod_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
@@ -61,16 +59,11 @@ class ContrattiContratto(models.Model):
     Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")   
     Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
     Con_Pdr_PotenzaSMC = fields.Char(string='Potenza Standard Metro Cubo:')
-    #Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
-    #Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
-    #Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
-    #Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
-    #Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])
     #endregion
 
 
     #region Fotovoltaico
-    Con_Fotov_MetodoPagamento = fields.Selection([('iban','Iban'), ('cc', 'CC'), ('unicaTranche', 'Bonifico unica tranche'), ('multiTranche', 'Bonifico multi tranche'), ('finanziamento','Finanziamento')])
+    Con_Fotov_MetodoPagamento = fields.Selection([('unicaTranche', 'Bonifico unica tranche'), ('multiTranche', 'Bonifico multi tranche'), ('finanziamento','Finanziamento')])
     Con_Fotov_Wallbox = fields.Boolean(string="Wallbox", default=False)
     Con_Fotov_PotenzaImp = fields.Char(string='Potenza impianto:')
     Con_Fotov_Potenzabatt = fields.Char(string='Potenza batteria accumolo:')
