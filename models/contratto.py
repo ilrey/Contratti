@@ -56,12 +56,13 @@ class ContrattiContratto(models.Model):
     Con_Pod_ConsAnnuo= fields.Char(string='Consumo annuo:')
     #Con_Pod_DataAttivazione= fields.Date(string='Data attivazione:')
 
-
+     
     Con_Pdr = fields.Char(string='PDR:')
-    Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
-    #Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
+    Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")   
     Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
-    Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
+    Con_Pdr_PotenzaSMC = fields.Char(string='Potenza Standard Metro Cubo:')
+    #Con_Pdr_Distributore = fields.Char(string='Distributore di zona:')
+    #Con_Pdr_DataAttivazione= fields.Date(string='Data attivazione:')
     #Con_Pdr_Riscaldamento = fields.Boolean(string="Riscaldamento", default=False)
     #Con_Pdr_CottAcqua = fields.Boolean(string="Cottura e/o acqua", default=False)
     #Con_Pdr_AttDis = fields.Selection([('pod_attivo','Attivo'), ('pod_disattivo', 'Disattivo')])

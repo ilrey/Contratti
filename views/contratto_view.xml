@@ -97,10 +97,10 @@
 						<group>
 							<field name="Con_GestoreAttuale" string="Gestore Attuale:" style="text-transform: uppercase;"/>
 							<field name="Con_OffertaAttuale" style="text-transform: uppercase;"/>
+							<field name="Con_Num_Migrare" style="text-transform: uppercase;"/>
 						</group>
 						<group>
-							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
-							<field name="Con_Num_Migrare" style="text-transform: uppercase;"/>							
+							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>														
 							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>							
 						</group>
 					</group>
@@ -111,15 +111,11 @@
 					<group attrs="{'invisible': [('Con_Pod_bool', '=', False)]}">
 						<group>
 							<field name="Con_Pod" style="text-transform: uppercase;"/>
-							<!--<field name="Con_Pod_ProvMervato" style="text-transform: uppercase;"/>-->
-							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>
-							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
-							<!--<field name="Con_Pod_Distributore" style="text-transform: uppercase;"/>-->
+							<field name="Con_Pod_AttSocVendita" style="text-transform: uppercase;"/>														
 						</group>
-						<group>							
+						<group>
+							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
-							<!--<field name="Con_Pod_DataAttivazione" style="text-transform: uppercase;"/>-->
-							<!--<field name="Con_Pod_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>-->
 						</group>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -129,14 +125,11 @@
 						<group>
 							<field name="Con_Pdr" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
-							<!--<field name="Con_Pdr_Distributore" style="text-transform: uppercase;"/>-->
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>							
-						</group>
-						<group>
-							<!--<field name="Con_Pdr_CottAcqua" style="text-transform: uppercase;"/>-->
-							<!--<field name="Con_Pdr_Riscaldamento" style="text-transform: uppercase;"/>-->
-							<field name="Con_Pdr_DataAttivazione" style="text-transform: uppercase;"/>							
-							<!--<field name="Con_Pdr_AttDis" string="Attivo/Disattivo" style="text-transform: uppercase;"/>-->
+						</group>						
+							<field name="Con_Pdr_PotenzaSMC" style="text-transform: uppercase;"/>
+							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
+						<group>						
 						</group>
 					</group>
 					<!--FOTOVOLTAICO-->
