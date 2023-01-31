@@ -88,7 +88,7 @@
 							</group>
 						</group>
 							<b>DOCUMENTO DEL CLIENTE:</b>
-							<field name="Con_Documento" string="Documento Cliente" filename="Documento Cliente"/>
+							<field name="Con_Documento"/>
 					</group>
 
 					<!--TELEFONIA-->
@@ -105,6 +105,7 @@
 							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
 							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>
 						</group>
+						<b>DOCUMENTO TELEFONIA:</b>
 						<field name="Con_Tel_Documento"/>
 					</group>
 					<!--ENERGIA-->
@@ -120,6 +121,7 @@
 							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
+						<b>DOCUMENTO ENERGIA:</b>
 						<field name="Con_Pod_Documento"/>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -135,14 +137,8 @@
 							<field name="Con_Pdr_PotenzaSMC" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
-						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
-						</notebook>
+						<b>DOCUMENTO GAS:</b>
+						<field name="Con_Pdr_Documento"/>
 					</group>
 					<!--FOTOVOLTAICO-->
 					<p attrs="{'invisible': [('Con_Fotov_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -158,14 +154,8 @@
 							<field name="Con_Fotov_MetodoPagamento" string="Metodo di Pagamento:" style="text-transform: uppercase;"/>
 							<field name="Con_Fotov_Wallbox" style="text-transform: uppercase;"/>
 						</group>
-						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
-						</notebook>
+						<b>DOCUMENTO FOTOVOLTAICO:</b>
+						<field name="Con_Fotov_Documento"/>
 					</group>
 					<!--NOLEGGIO AUTO-->
 					<p attrs="{'invisible': [('Con_Auto_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -176,16 +166,10 @@
 							<field name="Con_Auto_AutoVenduta" string="Gestore Attuale:" style="text-transform: uppercase;"/>
 						</group>
 						<group>
-							<field name="Con_Fotov_DurataNoleggio" style="text-transform: uppercase;"/>
+							<field name="Con_Auto_DurataNoleggio" style="text-transform: uppercase;"/>
 						</group>
-						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
-						</notebook>
+						<b>DOCUMENTO NOLEGGIO:</b>
+						<field name="Con_Auto_Documento"/>
 					</group>
 				</sheet>
 			</form>

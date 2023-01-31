@@ -62,6 +62,7 @@ class ContrattiContratto(models.Model):
     Con_Pdr_AttSocVendita = fields.Char(string="Attuale societa' vendita:")   
     Con_Pdr_ConsAnnuo= fields.Char(string='Consumo annuo:')
     Con_Pdr_PotenzaSMC = fields.Char(string='Potenza Standard Metro Cubo:')
+    Con_Pdr_Documento = fields.Binary(string='Documento Gas')
     #endregion
 
 
@@ -71,11 +72,13 @@ class ContrattiContratto(models.Model):
     Con_Fotov_PotenzaImp = fields.Char(string='Potenza impianto:')
     Con_Fotov_Potenzabatt = fields.Char(string='Potenza batteria accumolo:')
     Con_Fotov_Pompa = fields.Char(string='Pompa di calore:')
+    Con_Fotov_Documento = fields.Binary(string='Documento Fotovoltaico')
     #enregion
 
     #region NoleggioAuto
     Con_Auto_AutoVenduta = fields.Char(string='Auto venduta:')
-    Con_Fotov_DurataNoleggio = fields.Char(string='Durata noleggio:')
+    Con_Auto_Documento = fields.Binary(string='Documento Auto')
+    Con_Auto_DurataNoleggio = fields.Char(string='Durata noleggio:')
     #enregion
 
 
