@@ -100,8 +100,10 @@ class ContrattiContratto(models.Model):
             }
 
     @api.model
-    def create(self, vals):       
-        return super(ContrattiContratto, self).create(vals.upper())
+    def create(self, vals):
+        for k,v in vals.items():
+            vals.update({k: v.upper()})
+        return super(ContrattiContratto, self).create(vals)
 
 
 
