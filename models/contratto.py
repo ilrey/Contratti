@@ -104,9 +104,9 @@ class ContrattiContratto(models.Model):
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
 
-    def buttone_prova(self):       
-        delta = self.env['dms.file'].write({'name' : 'provafie'})
-        return delta
+    #def buttone_prova(self):       
+    #    delta = self.env['dms.file'].write({'name' : 'provafie'})
+    #    return delta
 
 
 
