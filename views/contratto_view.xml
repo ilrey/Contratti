@@ -87,7 +87,7 @@
 								<field name="Con_Auto_bool"/>
 							</group>
 						</group>
-							<h6 string="Documento Cliente:"/>
+							<b>DOCUMENTO DEL CLIENTE:</b>
 							<field name="Con_Documento" string="Documento Cliente" filename="Documento Cliente"/>
 					</group>
 
