@@ -73,17 +73,6 @@ class ContrattiContratto(models.Model):
     #region NoleggioAuto
     Con_Auto_AutoVenduta = fields.Char(string='Auto venduta:')
     Con_Fotov_DurataNoleggio = fields.Char(string='Durata noleggio:')
-    #Con_Auto_from_date = fields.Date(string="Register date")
-    #Con_Auto_final_date = fields.Date(string="Last date")
-    #Con_Auto_total_days = fields.Integer(string="Durata noleggio in gioni:")
-
-    #@api.onchange(' Con_Auto_from_date', ' Con_Auto_final_date',' Con_Auto_total_days')
-    #def calculate_date(self):
-    #    if self.from_date and self.final_date:
-    #        d1=datetime.strptime(str(self.from_date),'%Y-%m-%d') 
-    #        d2=datetime.strptime(str(self.final_date),'%Y-%m-%d')
-    #        d3=d2-d1
-    #        self. Con_Auto_total_days=str(d3.days)
     #enregion
 
 
@@ -112,6 +101,11 @@ class ContrattiContratto(models.Model):
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
+    def write(self, vals):
+        for i in list(vals):
+            if type(vals[i])!=bool and type(vals[i])!=int:               
+                vals[i] = vals[i].upper()
+        return super(ContrattiContratto, self).create(vals)
 
 
     #calendar_module
