@@ -101,7 +101,6 @@ class ContrattiContratto(models.Model):
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
 
-    @api.multi
     def buttone_prova(slef):       
         delta = self.env['dms.file'].create({'name' : 'provafie'})
         return delta
