@@ -13,7 +13,7 @@ class ContrattiContratto(models.Model):
     Con_CodFiscaleCliente = fields.Char(string='Codice Fiscale')
     Con_TipoDocumento = fields.Selection([('Carta_identita','Carta identita'), ('patente', 'Patente'), ('passaporto', 'Passaporto')])   
     Con_Numero = fields.Char(string='Numero')
-    Con_RilasciatoDa = fields.Selection([('comune','Comune'), ('mctc', 'MCTC'), ('uco', 'UCO'), ('questura','Questura')])   
+    Con_RilasciatoDa = fields.Selection([('COMUNE','COMUNE'), ('MCTC', 'MCTC'), ('UCO', 'UCO'), ('QUESTURA','QUESTURA')])   
     Con_DataRilascio = fields.Date(string='Data rilascio')
     Con_Telefono = fields.Char(string='Telefono')
     Con_Cellulare = fields.Char(string='Cellulare')
