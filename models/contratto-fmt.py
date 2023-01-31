@@ -107,8 +107,8 @@ class ContrattiContratto(models.Model):
 
     @api.model
     def create(self, vals):
-        for i, word in enumerate(vals):
-            vals[i] = word.upper()
+        for i in list(vals):
+            vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
 
