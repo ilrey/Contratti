@@ -8,11 +8,11 @@
 	<menuitem id="menu_contratti_master"
 			  name="Dettaglio Contratto"
 			  parent="menu_contratti_root"
-			  sequence="1"/>
+			  sequence="0"/>
 
-	<!--<menuitem id="menu_contratti"
+	<menuitem id="menu_contratti"
 			  name="Contratto"
 			  action="Contratti.action_contratti_contratto"
 			  parent="menu_contratti_master"	
-			  sequence="2"/>-->
+			  sequence="2"/>
 </odoo>
