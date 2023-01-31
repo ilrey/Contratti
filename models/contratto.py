@@ -1,5 +1,6 @@
 from dataclasses import field
 from email.policy import default
+import string
 from odoo import api, fields, models
 from odoo.exceptions import ValidationError
 
@@ -102,7 +103,9 @@ class ContrattiContratto(models.Model):
         return super(ContrattiContratto, self).write(vals)
 
     def buttone_prova(slef):       
-        delta = self.env['dms.file'].create({'name' : 'provafie'})
+        delta = self.env['dms.file'].search([])
+        delta = str(delta.mapped('name'))
+        raise ValidationError(_(delta))
         return delta
 
 
