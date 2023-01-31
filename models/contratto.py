@@ -89,6 +89,7 @@ class ContrattiContratto(models.Model):
 
     active = fields.Boolean(string="Active", default=True)
     user_id = fields.Many2one('res.users', string='Responsible', tracking=True,  default=lambda self: self.env.user)
+    file_Create = fields.One2one('dms.view_dms_file_form', string='File', tracking=True,  default=lambda self: self.env.user)
 
 
     def open_file_upload(self):
