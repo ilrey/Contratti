@@ -88,8 +88,10 @@
 							</group>
 						</group>
 						<notebook>
-								<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
-								<button name="buttone_prova" type="object" string="Carica"></button>
+							<!--context="{'default_directory_id': '11'}"-->
+							<page string="Documento cliente">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
 						</notebook>
 					</group>
 
@@ -108,7 +110,12 @@
 							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+							<page string="Contratto">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
+							<page string="Note">
+								<field name="Con_Note"/>
+							</page>
 						</notebook>
 					</group>
 					<!--ENERGIA-->
@@ -125,7 +132,12 @@
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+							<page string="Contratto">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
+							<page string="Note">
+								<field name="Con_Note"/>
+							</page>
 						</notebook>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -142,7 +154,12 @@
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+							<page string="Contratto">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
+							<page string="Note">
+								<field name="Con_Note"/>
+							</page>
 						</notebook>
 					</group>
 					<!--FOTOVOLTAICO-->
@@ -160,7 +177,12 @@
 							<field name="Con_Fotov_Wallbox" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+							<page string="Contratto">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
+							<page string="Note">
+								<field name="Con_Note"/>
+							</page>
 						</notebook>
 					</group>
 					<!--NOLEGGIO AUTO-->
@@ -174,8 +196,13 @@
 						<group>
 							<field name="Con_Fotov_DurataNoleggio" style="text-transform: uppercase;"/>
 						</group>
-								<notebook>
-								<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+						<notebook>
+							<page string="Contratto">
+								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
+							</page>
+							<page string="Note">
+								<field name="Con_Note"/>
+							</page>
 						</notebook>
 					</group>
 				</sheet>
