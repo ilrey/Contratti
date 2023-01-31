@@ -11,7 +11,6 @@
 				<field name="Con_Cellulare"/>
 				<field name="Con_Email"/>
 				<field name="user_id" string="Agente"/>
-				<field name="file_Create" string="File"/>
 			</tree>
 		</field>
 	</record>
@@ -174,8 +173,8 @@
 						<group>
 							<field name="Con_Fotov_DurataNoleggio" style="text-transform: uppercase;"/>
 						</group>
-						<notebook>
-							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+								<notebook>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 				</sheet>
