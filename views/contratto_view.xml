@@ -87,8 +87,7 @@
 								<field name="Con_Auto_bool"/>
 							</group>
 						</group>
-							<field name="Con_Documento" filename="Con_Documento_Name"/>
-							<field name="Con_Documento_Name" invisible="1"/>
+							<field name="Con_Documento" string="Documento Cliente" filename="Documento Cliente"/>
 					</group>
 
 					<!--TELEFONIA-->

@@ -26,7 +26,6 @@ class ContrattiContratto(models.Model):
     Con_Citta = fields.Char(string="Citta'")
     Con_Note = fields.Html('Note')
     Con_Documento = fields.Binary(string='Documento cliente')
-    Con_Documento_Name = fields.Char(string="File name")
     #endregion 
     
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
