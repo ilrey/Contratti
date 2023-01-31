@@ -88,12 +88,6 @@ class ContrattiContratto(models.Model):
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
 
-    
-    @api.multi        
-    def action_test_connection(self):                  
-        self.env['dms.file'].create({'id_store': 100})        
-        self.env.cr.commit()
-
     @api.model
     def create(self, vals):
         for i in list(vals):
