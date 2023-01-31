@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\models",
+    "\\views"
   ],
+  "SelectedNode": "\\models\\contratto.py",
   "PreviewInSolutionExplorer": false
 }

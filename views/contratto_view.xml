@@ -88,10 +88,7 @@
 							</group>
 						</group>
 						<notebook>
-							<!--context="{'default_directory_id': '11'}"-->
-							<page string="Documento cliente">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
+								<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 
@@ -110,12 +107,7 @@
 							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 					<!--ENERGIA-->
@@ -132,12 +124,7 @@
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -154,12 +141,7 @@
 							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 					<!--FOTOVOLTAICO-->
@@ -177,12 +159,7 @@
 							<field name="Con_Fotov_Wallbox" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 					<!--NOLEGGIO AUTO-->
@@ -197,12 +174,7 @@
 							<field name="Con_Fotov_DurataNoleggio" style="text-transform: uppercase;"/>
 						</group>
 						<notebook>
-							<page string="Contratto">
-								<button name="open_file_upload" type="object" string="Carica/Visualizza"></button>
-							</page>
-							<page string="Note">
-								<field name="Con_Note"/>
-							</page>
+							<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 				</sheet>
