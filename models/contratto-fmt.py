@@ -99,10 +99,16 @@ class ContrattiContratto(models.Model):
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
 
+    #@api.onchange('field_name')
+    #def set_caps(self):        
+    #    val = str(self.field_name)
+    #    self.field_name = val.upper()
+
+
     @api.model
     def create(self, vals):
-        for k,v in vals.items():
-            vals.update({k.upper(): v.upper()})
+        for i, word in enumerate(vals):
+            vals[i] = word.upper()
         return super(ContrattiContratto, self).create(vals)
 
 
