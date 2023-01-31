@@ -101,9 +101,7 @@ class ContrattiContratto(models.Model):
 
     @api.model
     def create(self, vals):       
-        if vals.get('default_code', False):
-            vals['default_code'] = vals.get('default_code', '').upper()
-        return super(ContrattiContratto, self).create(vals)
+        return super(ContrattiContratto, self).create(vals.upper())
 
 
 
