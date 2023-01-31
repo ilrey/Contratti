@@ -87,7 +87,7 @@
 								<field name="Con_Auto_bool"/>
 							</group>
 						</group>
-							<field name="Con_Documento" />
+							<field name="Con_Documento"/>
 					</group>
 
 					<!--TELEFONIA-->
@@ -104,7 +104,7 @@
 							<field name="Con_CodMigrazione" style="text-transform: uppercase;"/>
 							<field name="Con_Num_Sim" style="text-transform: uppercase;"/>
 						</group>
-						<field name="Con_Tel_Documento" />
+						<field name="Con_Tel_Documento"/>
 					</group>
 					<!--ENERGIA-->
 					<p attrs="{'invisible': [('Con_Pod_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
@@ -119,7 +119,7 @@
 							<field name="Con_Pod_Potenzakvw" style="text-transform: uppercase;"/>
 							<field name="Con_Pod_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
-						<field name="Con_Pod_Documento" />>
+						<field name="Con_Pod_Documento"/>
 					</group>
 					<p attrs="{'invisible': [('Con_Pdr_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
 						<b  style="color: white;">GAS</b>
