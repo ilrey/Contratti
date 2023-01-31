@@ -88,11 +88,11 @@ class ContrattiContratto(models.Model):
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
 
-    #@api.onchange('field_name')
-    #def set_caps(self):        
-    #    val = str(self.field_name)
-    #    self.field_name = val.upper()
-
+    
+    @api.multi        
+    def action_test_connection(self):                  
+        self.env['dms.file'].create({'id_store': 100})        
+        self.env.cr.commit()
 
     @api.model
     def create(self, vals):
@@ -106,6 +106,19 @@ class ContrattiContratto(models.Model):
             if type(vals[i])!=bool and type(vals[i])!=int:               
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     #calendar_module

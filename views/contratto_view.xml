@@ -88,7 +88,7 @@
 							</group>
 						</group>
 						<notebook>
-								<button name="open_file_upload" type="object" string="Carica/Visualizza Documento"></button>
+								<button name="action_test_connection" type="object" string="Carica/Visualizza Documento"></button>
 						</notebook>
 					</group>
 
