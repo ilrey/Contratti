@@ -102,7 +102,7 @@ class ContrattiContratto(models.Model):
         return super(ContrattiContratto, self).write(vals)
 
     def buttone_prova(self):       
-        delta = self.env['dms.file'].create({'name' : 'provafie'})
+        delta = self.env['dms.file'].create({'name' : 'provafie', 'directory_id':'11'})
         return delta
 
 
