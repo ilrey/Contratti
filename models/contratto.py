@@ -25,6 +25,7 @@ class ContrattiContratto(models.Model):
     Con_Interno = fields.Char(string='Interno')
     Con_Citta = fields.Char(string="Citta'")
     Con_Note = fields.Html('Note')
+    Con_Documento = fields.binary(string='Documento cliente')
     #endregion 
     
     Con_Telefonia = fields.Boolean(string="Telefonia", default=False)
@@ -44,6 +45,7 @@ class ContrattiContratto(models.Model):
     Con_CodMigrazione = fields.Char(string='Codice Migrazione:')
     Con_Num_Migrare = fields.Char(string='Numero da Migrare:')
     Con_Num_Sim = fields.Char(string='Numero SIM:')
+    Con_Tel_Documento = fields.binary(string='Documento telefonia')
     #endregion
 
     #region Energia    
@@ -52,6 +54,7 @@ class ContrattiContratto(models.Model):
     Con_Pod_AttSocVendita = fields.Char(string="Attuale societa' vendita:")
     Con_Pod_Potenzakvw = fields.Char(string='Potenza KW:')
     Con_Pod_ConsAnnuo= fields.Char(string='Consumo annuo:')
+    Con_Pod_Documento = fields.binary(string='Documento Energia')
     #Con_Pod_DataAttivazione= fields.Date(string='Data attivazione:')
 
      
