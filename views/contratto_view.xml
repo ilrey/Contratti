@@ -80,7 +80,6 @@
 							<group>
 								<field name="active" invisible="1"/>
 								<field name="user_id" string="Agente"/>
-								<field name="dms_file" string="File"/>
 								<field name="Con_Telefonia"/>
 								<field name="Con_Pod_bool"/>
 								<field name="Con_Pdr_bool"/>
