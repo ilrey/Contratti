@@ -99,6 +99,14 @@ class ContrattiContratto(models.Model):
             'view_id': self.env.ref('dms.view_dms_file_form').id,
             }
 
+    @api.model
+    def create(self, vals):       
+        if vals.get('default_code', False):
+            vals['default_code'] = vals.get('default_code', '').upper()
+        return super(ContrattiContratto, self).create(vals)
+
+
+
     #calendar_module
     #def map_url(self):
     #    url_string = ("https://www.google.com/maps/dir//+{},+{},+{}".format(self.x_indirizzo, self.x_civico, self.x_citta))
