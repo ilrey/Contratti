@@ -108,7 +108,8 @@ class ContrattiContratto(models.Model):
     @api.model
     def create(self, vals):
         for i in list(vals):
-            vals[i] = vals[i].upper()
+            if type(vals[i])!=bool:
+                vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
 
