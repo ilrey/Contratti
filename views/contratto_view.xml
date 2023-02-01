@@ -22,7 +22,7 @@
 		<field name="arch" type="xml">
 			<graph>
 				<field name="user_id" string="Concluso da:"  attrs="{'readonly': [('user_id', '!=', 2)]}"/>
-				<field name="user_id2" string="ID:"/>
+				<!--<field name="user_id2" string="ID:"/>-->
 			</graph>
 		</field>
 	</record>
