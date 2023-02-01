@@ -122,7 +122,7 @@ class ContrattiContratto(models.Model):
     user_id = fields.Many2one(
         "res.users", tracking=True, default=lambda self: self.env.user
     )
-    #user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
+    # user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
 
     def open_file_upload(self):
         return {
