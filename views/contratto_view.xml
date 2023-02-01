@@ -132,7 +132,6 @@
 						<group>
 							<field name="Con_Pdr" style="text-transform: uppercase;"/>
 							<field name="Con_Pdr_AttSocVendita" style="text-transform: uppercase;"/>
-							<field name="Con_Pdr_ConsAnnuo" style="text-transform: uppercase;"/>
 						</group>
 						<group>
 							<field name="Con_Pdr_PotenzaSMC" style="text-transform: uppercase;"/>
@@ -160,7 +159,7 @@
 					</group>
 					<!--NOLEGGIO AUTO-->
 					<p attrs="{'invisible': [('Con_Auto_bool', '=', False)]}" style="font-size:13pt; background-color:tomato; padding-left: inherit;">
-						<b  style="color: white;">FOTOVOLTAICO</b>
+						<b  style="color: white;">NOLEGGIO AUTO</b>
 					</p>
 					<group attrs="{'invisible': [('Con_Auto_bool', '=', False)]}">
 						<group>
