@@ -21,7 +21,7 @@
 		<field name="model">contratti.contratto</field>
 		<field name="arch" type="xml">
 			<graph>
-				<field name="user_id" string="Agente"/>
+				<field name="user_id" string="Concluso da:"  attrs="{'readonly': [('user_id', '!=', 2)]}"/>
 			</graph>
 		</field>
 	</record>
