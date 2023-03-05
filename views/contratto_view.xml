@@ -83,7 +83,7 @@
 							<group>
 								<field name="active" invisible="1"/>
 								<!--<field name="user_id" string="Agente"/>-->
-								<field name="partner_ids" widget="many2manyattendee" attrs="{'readonly': [('user_id', '!=', 2)]}"/>
+								<field name="partner_ids" widget="many2manyattendee"/>
 								<field name="Con_Telefonia"/>
 								<field name="Con_Pod_bool"/>
 								<field name="Con_Pdr_bool"/>
