@@ -10,8 +10,8 @@
 				<field name="Con_NomeCliente"/>
 				<field name="Con_Cellulare"/>
 				<field name="Con_Email"/>
-				<field name="user_id" string="Agente"/>
-				<field name="partner_ids" string=""/>
+				<!--<field name="user_id" string="Agente"/>-->
+				<field name="partner_ids"/>
 			</tree>
 		</field>
 	</record>
@@ -22,7 +22,8 @@
 		<field name="model">contratti.contratto</field>
 		<field name="arch" type="xml">
 			<graph>
-				<field name="user_id" string="Concluso da :"  attrs="{'readonly': [('user_id', '!=', 2)]}"/>
+				<field name="partner_ids"/>
+				<!--<field name="user_id" string="Concluso da :"  attrs="{'readonly': [('user_id', '!=', 2)]}"/>-->
 				<!--<field name="user_id2" string="ID:"/>-->
 			</graph>
 		</field>
@@ -81,7 +82,8 @@
 							</group>
 							<group>
 								<field name="active" invisible="1"/>
-								<field name="user_id" string="Agente"/>
+								<!--<field name="user_id" string="Agente"/>-->
+								<field name="partner_ids" widget="many2manyattendee" attrs="{'readonly': [('user_id', '!=', 2)]}"/>
 								<field name="Con_Telefonia"/>
 								<field name="Con_Pod_bool"/>
 								<field name="Con_Pdr_bool"/>
