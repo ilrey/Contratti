@@ -135,7 +135,7 @@ class ContrattiContratto(models.Model):
             "view_mode": "form",
             "view_id": self.env.ref("dms.view_dms_file_form").id,
         }
-"""""
+
     @api.model
     def create(self, vals):
         for i in list(vals):
@@ -151,7 +151,7 @@ class ContrattiContratto(models.Model):
                 if type(vals[i]) != list: 
                     vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
-"""""
+
     # def buttone_prova(self):
     #    delta = self.env['dms.file'].write({'name' : 'provafie'})
     #    return delta
