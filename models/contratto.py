@@ -139,13 +139,13 @@ class ContrattiContratto(models.Model):
     @api.model
     def create(self, vals):
         for i in list(vals):
-            if type(vals[i]) != bool and type(vals[i]) != int:
+            if type(vals[i]) != bool and type(vals[i]) != int and type(vals[i]) != list:
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
     def write(self, vals):
         for i in list(vals):
-            if type(vals[i]) != bool and type(vals[i]) != int:
+            if type(vals[i]) != bool and type(vals[i]) != int and type(vals[i]) != list:
                 vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
 
