@@ -5,5 +5,5 @@ from odoo import api, models, _
 
 
 class Users(models.Model):
-    _name = 'res.partners'
-    _inherit = ['res.partners']
+    _name = 'res.partner'
+    _inherit = ['res.partner']
