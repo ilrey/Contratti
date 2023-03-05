@@ -119,9 +119,9 @@ class ContrattiContratto(models.Model):
     # enregion
 
     active = fields.Boolean(string="Active", default=True)
-    #user_id = fields.Many2one(
-     #   "res.users", tracking=True, default=lambda self: self.env.user
-    #)
+    user_id = fields.Many2one(
+        "res.users", tracking=True, default=lambda self: self.env.user
+    )
     partner_ids = fields.Many2many(
         "res.partner", tracking=True, default=lambda self: self.env.user
     )
