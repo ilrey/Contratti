@@ -123,7 +123,7 @@ class ContrattiContratto(models.Model):
         "res.users", tracking=True, default=lambda self: self.env.user
     )
     partner_ids = fields.Many2many(
-        "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
+        "res.partner", tracking=True
     )
     # user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
 
@@ -144,6 +144,7 @@ class ContrattiContratto(models.Model):
                     vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
+    @api.model
     def write(self, vals):
         for i in list(vals):
             if type(vals[i]) != bool and type(vals[i]) != int:
