@@ -123,7 +123,7 @@ class ContrattiContratto(models.Model):
         "res.users", tracking=True, default=lambda self: self.env.user
     )
     partner_ids = fields.Many2many(
-        "res.partner", tracking=True
+        "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
     )
     # user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
 
@@ -135,7 +135,7 @@ class ContrattiContratto(models.Model):
             "view_mode": "form",
             "view_id": self.env.ref("dms.view_dms_file_form").id,
         }
-
+"""""
     @api.model
     def create(self, vals):
         for i in list(vals):
@@ -148,10 +148,10 @@ class ContrattiContratto(models.Model):
     def write(self, vals):
         for i in list(vals):
             if type(vals[i]) != bool and type(vals[i]) != int:
-                if type(vals[i]) != list:
+                if type(vals[i]) != list: 
                     vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).write(vals)
-
+"""""
     # def buttone_prova(self):
     #    delta = self.env['dms.file'].write({'name' : 'provafie'})
     #    return delta
