@@ -11,6 +11,7 @@
 				<field name="Con_Cellulare"/>
 				<field name="Con_Email"/>
 				<field name="user_id" string="Agente"/>
+				<field name="partner_ids" string=""/>
 			</tree>
 		</field>
 	</record>
