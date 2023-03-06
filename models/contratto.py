@@ -123,7 +123,7 @@ class ContrattiContratto(models.Model):
         "res.users", tracking=True, default=lambda self: self.env.user
     )
     partner_ids = fields.Many2many(
-        "res.partner", tracking=True
+        "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
     )
     # user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
 
