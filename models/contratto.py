@@ -125,6 +125,9 @@ class ContrattiContratto(models.Model):
     partner_ids = fields.Many2many(
         "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
     )
+
+    utente_is_admin = fields.Boolean('Gruppo Utente', default=lambda self: self.env.user.has_group('base.group_system'))
+
     # user_id2 = fields.Char("Current User", default=lambda self: self.env.uid)
 
     def open_file_upload(self):

@@ -50,6 +50,7 @@
 					<!--ANAGRAFICA-->
 					<p style="font-size:13pt; background-color:tomato; padding-left: inherit;">
 						<b style="color: white;">DATI DEL CLIENTE</b>
+						<field name="utente_is_admin" invisible="1" readonly="1"/>
 					</p>
 					<group>
 						<group>
@@ -81,7 +82,7 @@
 							<group>
 								<field name="active" invisible="1"/>
 								<!--<field name="user_id" string="Agente"/>-->
-								<field name="partner_ids" widget="many2many_tags"/>
+								<field name="partner_ids" widget="many2many_tags" attrs="{'readonly': [('utente_is_admin', '=', False)]}"/>
 								<field name="Con_Telefonia"/>
 								<field name="Con_Pod_bool"/>
 								<field name="Con_Pdr_bool"/>
