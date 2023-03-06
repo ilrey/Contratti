@@ -164,7 +164,7 @@
 					</p>
 					<group attrs="{'invisible': [('Con_Auto_bool', '=', False)]}">
 						<group>
-							<field name="Con_Auto_AutoVenduta" string="Gestore Attuale:" style="text-transform: uppercase;"/>
+							<field name="Con_Auto_AutoVenduta" string="Macchina Noleggiata:" style="text-transform: uppercase;"/>
 						</group>
 						<group>
 							<field name="Con_Auto_DurataNoleggio" style="text-transform: uppercase;"/>
