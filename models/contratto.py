@@ -125,6 +125,13 @@ class ContrattiContratto(models.Model):
     partner_ids = fields.Many2many(
         "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
     )
+    area_provenienza = fields.Char('Area Provenienza:', default= lambda self: \
+                                                '64' if self.env.user.has_group('hr.group_hr_areasud') else \
+                                                '68' if self.env.user.has_group('hr.group_hr_areacentro') else \
+                                                '66' if self.env.user.has_group('hr.group_hr_areanord') else \
+                                                '67' if self.env.user.has_group('hr.group_hr_areaveneto') else \
+                                                'indefinito' )
+
 
     utente_is_admin = fields.Boolean('Gruppo Utente', default=lambda self: self.env.user.has_group('base.group_system'))
 
