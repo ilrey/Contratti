@@ -125,7 +125,7 @@ class ContrattiContratto(models.Model):
     partner_ids = fields.Many2many(
         "res.partner", tracking=True, default=lambda self: self.env.user.partner_id
     )
-    area_provenienza = fields.Char('Area Provenienza:', default= lambda self: \
+    area_provenienza = fields.Char('Area Provenienza:', invisible="1", readonly="1", default= lambda self: \
                                                 '64' if self.env.user.has_group('hr.group_hr_areasud') else \
                                                 '68' if self.env.user.has_group('hr.group_hr_areacentro') else \
                                                 '66' if self.env.user.has_group('hr.group_hr_areanord') else \
@@ -154,7 +154,6 @@ class ContrattiContratto(models.Model):
                     vals[i] = vals[i].upper()
         return super(ContrattiContratto, self).create(vals)
 
-    @api.model
     def write(self, vals):
         for i in list(vals):
             if type(vals[i]) != bool and type(vals[i]) != int:

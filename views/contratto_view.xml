@@ -36,6 +36,7 @@
 				<field name="Con_CognomeClienteContratto"/>
 				<field name="Con_NomeCliente"/>
 				<field name="Con_CodFiscaleCliente"/>
+				<field name="area_provenienza"/>
 			</search>
 		</field>
 	</record>
